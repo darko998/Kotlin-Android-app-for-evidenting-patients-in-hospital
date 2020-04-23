@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Projekat 1 Darko_Dimitrijevic_RN94-18</string>
+    <string name="login_text">Informacioni sistem za pracenje stanja pacijenata obolelih od Covid 19</string>
+    <string name="stanje">Stanje</string>
+    <string name="unos">Unos</string>
+    <string name="liste">Liste</string>
+    <string name="profil">Profil</string>
+    <string name="pregled_brojnog_stanja_pacijenata">Pregled brojnog stanja pacijenata</string>
+    <string name="broj_pacijenata_u_cekaonici">Broj pacijenata u cekaonici</string>
+    <string name="broj_hospitalizovanih_pacijenta">Broj hospitalizovanih pacijenta</string>
+    <string name="broj_otpustenih_pacijenata">Broj otpustenih pacijenata</string>
+    <string name="unos_novog_pacijenta">Unos novog pacijenta</string>
+    <string name="unesite_ime">Unesite ime</string>
+    <string name="unesite_prezime">Unesite prezime</string>
+    <string name="unesite_simptome_i_opste_stanje_pacijenta">Unesite simptome i opste stanje pacijenta</string>
+    <string name="dodajte_u_cekaonicu">Dodajte u cekaonicu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="podaci_o_zdravstvenom_radniku">Podaci o zdravstvenom radniku</string>
+    <string name="izmeni">Izmeni</string>
+    <string name="odjava">Odjava</string>
+    <string name="prezime">Prezime</string>
+    <string name="bolnica">Bolnica</string>
+    <string name="ime">Ime</string>
+    <string name="odustani">Odustani</string>
+    <string name="cekaonica">Cekaonica</string>
+    <string name="hospitalizovani">Hospitalizovani</string>
+    <string name="otpusteni">Otpusteni</string>
+    <string name="zdrav">Zdrav</string>
+    <string name="hospitalizacija">Hospitalizacija</string>
+    <string name="karton">Karton</string>
+    <string name="otpust">Otpust</string>
+    <string name="otpusten">Otpusten</string>
+</resources>

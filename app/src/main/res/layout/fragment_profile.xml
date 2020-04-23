@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/podaci_o_zdravstvenom_radniku"
+        android:gravity="center"
+        android:theme="@style/TitleTextTheme"
+        android:layout_margin="30dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_healing"
+        android:layout_gravity="center"
+        android:tint="@color/colorGreen"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ime"
+        android:theme="@style/ProfileFragmentTheme"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/tv_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TitleTextTheme"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prezime"
+        android:theme="@style/ProfileFragmentTheme"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/tv_last_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TitleTextTheme"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bolnica"
+        android:theme="@style/ProfileFragmentTheme"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/tv_hospital_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TitleTextTheme"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/izmeni"
+            android:layout_marginEnd="30dp"
+            android:background="@color/darkGray"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/button_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/odjava"
+            android:background="@color/darkGray"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
