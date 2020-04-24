@@ -14,8 +14,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleImageViewPatient"
-            android:layout_width="76dp"
-            android:layout_height="76dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
             android:layout_margin="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -56,11 +56,11 @@
 
         <Button
             android:id="@+id/button_healthy"
-            android:layout_width="130dp"
-            android:layout_height="40dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
             android:text="@string/zdrav"
             android:layout_margin="20dp"
-            android:textSize="13dp"
+            android:textSize="13sp"
             android:background="@color/darkGray"
             android:textColor="@android:color/white"
             app:layout_constraintTop_toBottomOf="@id/tv_symptoms"
@@ -69,11 +69,11 @@
 
         <Button
             android:id="@+id/button_hospitalization"
-            android:layout_width="130dp"
-            android:layout_height="40dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
             android:text="@string/hospitalizacija"
             android:layout_margin="20dp"
-            android:textSize="13dp"
+            android:textSize="13sp"
             android:background="@color/darkGray"
             android:textColor="@android:color/white"
             app:layout_constraintTop_toBottomOf="@id/tv_symptoms"

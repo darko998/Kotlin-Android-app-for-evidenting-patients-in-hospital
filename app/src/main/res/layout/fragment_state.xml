@@ -4,91 +4,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_unit_strength"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:gravity="center"
-        android:text="@string/pregled_brojnog_stanja_pacijenata"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/tv_unit_strength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:text="@string/pregled_brojnog_stanja_pacijenata"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
 
-    <TextView
-        android:id="@+id/tv_patient_number_in_room"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/broj_pacijenata_u_cekaonici"
-        app:layout_constraintTop_toBottomOf="@id/tv_unit_strength"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="190dp"
-        android:layout_marginStart="30dp"
-        android:theme="@style/StateFragmentTheme"
-        />
-    <TextView
-        android:id="@+id/tv_patient_number_in_room_value"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:textColor="@color/colorYellow"
-        android:theme="@style/StateFragmentTheme"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_patient_number_in_room"
-        />
+            <TextView
+                android:id="@+id/tv_patient_number_in_room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/broj_pacijenata_u_cekaonici"
+                app:layout_constraintTop_toBottomOf="@id/tv_unit_strength"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="190dp"
+                android:layout_marginStart="30dp"
+                android:theme="@style/StateFragmentTheme"
+                />
+            <TextView
+                android:id="@+id/tv_patient_number_in_room_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/colorYellow"
+                android:theme="@style/StateFragmentTheme"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_patient_number_in_room"
+                />
 
 
 
 
-    <TextView
-        android:id="@+id/tv_hospitalize_patients"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/broj_hospitalizovanih_pacijenta"
-        app:layout_constraintTop_toBottomOf="@id/tv_patient_number_in_room"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="30dp"
-        android:theme="@style/StateFragmentTheme"
-        />
-    <TextView
-        android:id="@+id/tv_hospitalize_patients_value"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:textColor="@color/colorOrange"
-        android:theme="@style/StateFragmentTheme"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_hospitalize_patients"
-        />
+            <TextView
+                android:id="@+id/tv_hospitalize_patients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/broj_hospitalizovanih_pacijenta"
+                app:layout_constraintTop_toBottomOf="@id/tv_patient_number_in_room"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="30dp"
+                android:theme="@style/StateFragmentTheme"
+                />
+            <TextView
+                android:id="@+id/tv_hospitalize_patients_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/colorOrange"
+                android:theme="@style/StateFragmentTheme"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_hospitalize_patients"
+                />
 
 
 
-    <TextView
-        android:id="@+id/tv_free_patients"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/broj_otpustenih_pacijenata"
-        app:layout_constraintTop_toBottomOf="@id/tv_hospitalize_patients"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="30dp"
-        android:theme="@style/StateFragmentTheme"
-        />
-    <TextView
-        android:id="@+id/tv_free_patients_value"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:textColor="@color/colorBlue"
-        android:theme="@style/StateFragmentTheme"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_free_patients"
-        />
+            <TextView
+                android:id="@+id/tv_free_patients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/broj_otpustenih_pacijenata"
+                app:layout_constraintTop_toBottomOf="@id/tv_hospitalize_patients"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="30dp"
+                android:theme="@style/StateFragmentTheme"
+                />
+            <TextView
+                android:id="@+id/tv_free_patients_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/colorBlue"
+                android:theme="@style/StateFragmentTheme"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_free_patients"
+                />
 
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

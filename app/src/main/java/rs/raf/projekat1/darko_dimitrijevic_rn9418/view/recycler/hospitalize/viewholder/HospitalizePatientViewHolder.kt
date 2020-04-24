@@ -9,20 +9,23 @@ import com.squareup.picasso.Picasso
 import rs.raf.projekat1.darko_dimitrijevic_rn9418.R
 import rs.raf.projekat1.darko_dimitrijevic_rn9418.model.Patient
 
-class HospitalizePatientViewHolder(val containerView: View, val onPatientClicked: (Int) -> Unit) : RecyclerView.ViewHolder(containerView) {
+class HospitalizePatientViewHolder(val containerView: View, val onPatientClicked: (Int, Int) -> Unit) : RecyclerView.ViewHolder(containerView) {
 
     lateinit var circleImageViewPatient: ImageView
     lateinit var patientName: TextView
     lateinit var patientLastName: TextView
-    lateinit var patientSymptoms: TextView
-    lateinit var medicalRecordButton: Button
+    lateinit var patientFileButton: Button
     lateinit var freeButton: Button
 
     init {
         initView()
 
         freeButton.setOnClickListener {
-            onPatientClicked.invoke(adapterPosition)
+            onPatientClicked.invoke(adapterPosition, 0) /** This zero is fleg for freeButton and one is for patientFileButton */
+        }
+
+        patientFileButton.setOnClickListener {
+            onPatientClicked.invoke(adapterPosition, 1)
         }
     }
 
@@ -36,15 +39,13 @@ class HospitalizePatientViewHolder(val containerView: View, val onPatientClicked
 
         patientName.text = patient.name
         patientLastName.text = patient.lastName
-        patientSymptoms.text = patient.symptoms
     }
 
     fun initView() {
         circleImageViewPatient = containerView.findViewById(R.id.circleImageViewPatient)
         patientName = containerView.findViewById(R.id.tv_name_patient)
         patientLastName = containerView.findViewById(R.id.tv_last_name_patient)
-        patientSymptoms = containerView.findViewById(R.id.tv_symptoms)
-        medicalRecordButton = containerView.findViewById(R.id.button_medical_record)
+        patientFileButton = containerView.findViewById(R.id.button_medical_record)
         freeButton = containerView.findViewById(R.id.button_free)
     }
 }

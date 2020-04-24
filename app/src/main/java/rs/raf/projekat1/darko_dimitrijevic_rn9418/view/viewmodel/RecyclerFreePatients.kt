@@ -36,4 +36,17 @@ class RecyclerFreePatients : ViewModel() {
 
         return fleg
     }
+
+    fun filterPatients(key: String) {
+        val filteredList = tmpFreePatients.filter {
+            val fullName = it.name.toLowerCase() + " " + it.lastName.toLowerCase()
+            fullName.contains(key.toLowerCase())
+        }
+
+        freePatients.value = filteredList
+    }
+
+    fun getNumberOfPatients(): Int {
+        return tmpFreePatients.size
+    }
 }

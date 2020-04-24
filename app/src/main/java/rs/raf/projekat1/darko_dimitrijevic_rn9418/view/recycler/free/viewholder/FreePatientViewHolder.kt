@@ -30,7 +30,9 @@ class FreePatientViewHolder(val containerView: View) : RecyclerView.ViewHolder(c
 
         patientName.text = patient.name
         patientLastName.text = patient.lastName
-        patientFreeDate.text = patient.symptoms
+
+        val freeDate = "Otpusten: " + patient.hospitalizeFreeDate
+        patientFreeDate.text = freeDate
     }
 
     fun initView() {

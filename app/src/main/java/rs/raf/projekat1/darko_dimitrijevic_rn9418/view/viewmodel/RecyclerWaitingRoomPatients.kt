@@ -71,4 +71,16 @@ class RecyclerWaitingRoomPatients : ViewModel() {
         patientsInWaitingRoom.value = listToSubmit
     }
 
+    fun filterPatients(key: String) {
+        val filteredList =tmpPatientsWaitingInRoom.filter {
+            val fullName: String = it.name.toLowerCase() + " " + it.lastName.toLowerCase()
+            fullName.contains(key.toLowerCase())
+        }
+
+        patientsInWaitingRoom.value = filteredList
+    }
+
+    fun getNumberOfPatients(): Int {
+        return tmpPatientsWaitingInRoom.size
+    }
 }

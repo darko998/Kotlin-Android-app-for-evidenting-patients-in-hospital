@@ -32,4 +32,8 @@
     <string name="karton">Karton</string>
     <string name="otpust">Otpust</string>
     <string name="otpusten">Otpusten</string>
+    <string name="stanje_pri_prijemu">Stanje pri prijemu</string>
+    <string name="trenutno_stanje">Trenutno stanje</string>
+    <string name="datum_prijema">Datum prijema</string>
+    <string name="karton_pacijenta">Karton pacijenta</string>
 </resources>

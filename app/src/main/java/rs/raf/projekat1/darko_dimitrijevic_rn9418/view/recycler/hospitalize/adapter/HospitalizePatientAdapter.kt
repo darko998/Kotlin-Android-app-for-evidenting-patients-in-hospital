@@ -10,7 +10,7 @@ import rs.raf.projekat1.darko_dimitrijevic_rn9418.view.recycler.hospitalize.view
 
 class HospitalizePatientAdapter(
     hospitalizePatientDiffItemCallback: HospitalizePatientDiffItemCallback,
-    val onPatientClicked: (Patient) -> Unit
+    val onPatientClicked: (Patient, Int) -> Unit
 ) : ListAdapter<Patient, HospitalizePatientViewHolder>(hospitalizePatientDiffItemCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HospitalizePatientViewHolder {
@@ -18,9 +18,9 @@ class HospitalizePatientAdapter(
         val containerView =
             layoutInflater.inflate(R.layout.layout_hospitalize_patient_list_item, parent, false)
 
-        return HospitalizePatientViewHolder(containerView) {
+        return HospitalizePatientViewHolder(containerView) {it: Int, fleg: Int ->
             val patient = getItem(it)
-            onPatientClicked.invoke(patient)
+            onPatientClicked.invoke(patient, fleg)
         }
     }
 
